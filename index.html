@@ -1,97 +1,77 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#080916">
-    <meta name="description" content="PlayFlower Studio — gry, serwery i cyfrowe światy tworzone z pasją.">
-    <title>PlayFlower Studio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="PlayFlower Studio — niezależne gry, serwery i cyfrowe światy.">
+  <meta property="og:title" content="PlayFlower Studio">
+  <meta property="og:description" content="Tworzymy światy, do których chce się wracać.">
+  <meta property="og:image" content="logo-playflower.png">
+  <title>PlayFlower Studio — tworzymy cyfrowe światy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="glow g1"></div>
-<div class="glow g2"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
 
-<!-- Particle container for interactive particles -->
-<div id="particles-container" class="particles-container"></div>
-<!-- Cursor glow for hero section -->
-<div id="cursor-glow" class="cursor-glow"></div>
+  <header class="header" id="header">
+    <a class="brand" href="#start" aria-label="PlayFlower Studio — strona główna">
+      <img src="logo-playflower.png" alt="Logo PlayFlower">
+      <span><b>PlayFlower</b><small>CREATIVE STUDIO</small></span>
+    </a>
+    <button class="menu" id="menu" aria-label="Otwórz menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav id="nav"><a href="#projekty">Projekty</a><a href="#studio">Studio</a><a href="#kontakt">Kontakt</a><a class="nav-button" href="#projekty">Odkryj nasze światy <span>↘</span></a></nav>
+  </header>
 
-<header>
-    <a class="brand" href="#top"><span class="mark">✦</span><span><b>PlayFlower</b><small>STUDIO</small></span></a>
-    <nav><a href="#projekty">Projekty</a><a href="#studio">O studiu</a></nav>
-    <button id="hamburger-menu" class="hamburger-menu" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav id="mobile-menu" class="mobile-menu">
-        <a href="#projekty">Projekty</a>
-        <a href="#studio">O studiu</a>
-        <a class="outline" href="#projekty">Odkryj projekty ↘</a>
-    </nav>
-    <a class="outline" href="#projekty">Odkryj projekty ↘</a>
-</header>
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-copy reveal">
+        <div class="badge"><span></span>NIEZALEŻNE STUDIO • POLSKA</div>
+        <h1>Nie tworzymy<br>zwykłych projektów.<br><em>Tworzymy światy.</em></h1>
+        <p>Łączymy gry, społeczności i technologię w doświadczenia, do których chce się wracać.</p>
+        <div class="hero-actions"><a class="primary" href="#projekty">Zobacz nasze projekty <span>↓</span></a><a class="text-link" href="#studio">Poznaj studio <span>→</span></a></div>
+        <div class="hero-meta"><span><b>02</b> aktywne projekty</span><span><b>∞</b> pomysłów na przyszłość</span></div>
+      </div>
 
-<main id="top">
-    <section class="hero">
-        <div class="copy">
-            <span class="eyebrow">● NIEZALEŻNE STUDIO. WIELKIE ŚWIATY.</span>
-            <h1>Tworzymy miejsca,<br>do których chce się <em>wracać.</em></h1>
-            <p>Gry, serwery i cyfrowe doświadczenia budowane z charakterem — przez graczy, dla graczy.</p>
-            <a class="button" href="#projekty">Poznaj nasze światy <b>↓</b></a>
+      <div class="hero-visual reveal">
+        <div class="visual-halo"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="studio-window">
+          <div class="window-top"><div><i></i><i></i><i></i></div><span>PLAYFLOWER.STUDIO</span><b>✦</b></div>
+          <div class="window-body"><div class="logo-stage"><div class="logo-ring"></div><img src="logo-playflower.png" alt="PlayFlower"></div><p>WELCOME TO</p><h2>PlayFlower Studio</h2><small>GAMES · SERVERS · DIGITAL WORLDS</small></div>
         </div>
-        <div class="orbit">
-            <i></i><i></i>
-            <div class="core"><span class="flower">✦</span></div>
-            <b class="o1"></b><b class="o2"></b><b class="o3"></b>
-        </div>
+        <div class="float-chip chip-one"><span>◈</span><div><b>Tworzymy</b><small>z charakterem</small></div></div>
+        <div class="float-chip chip-two"><span>✦</span><div><b>Łączymy</b><small>ludzi i światy</small></div></div>
+      </div>
+      <a class="scroll" href="#projekty"><span>↓</span> PRZEWIŃ, ABY ODKRYĆ</a>
     </section>
 
-    <section class="projects" id="projekty">
-        <div class="heading">
-            <div><span>NASZE PROJEKTY</span><h2>Wybierz swój świat.</h2></div>
-            <p>Dwa różne doświadczenia.<br>Jedna wspólna pasja.</p>
-        </div>
-        <div class="grid">
-            <a class="card minecraft" href="https://bit.ly/PlayFlowerWeb" target="_blank" rel="noopener">
-                <div class="top"><small>01</small><b>● SERWER MINECRAFT</b></div>
-                <div class="art"><div class="flower-logo">✦<small>PlayFlower</small></div></div>
-                <div class="info">
-                    <label>MINECRAFT NETWORK</label>
-                    <h3>PlayFlower</h3>
-                    <p>Twój świat. Twoja przygoda. Społeczność, tryby i niezapomniane eventy.</p>
-                    <strong>Wejdź na stronę serwera <i>↗</i></strong>
-                </div>
-            </a>
-            <a class="card ludo" href="https://domkor2012-sys.github.io/3Games-Ludo/">
-                <div class="top"><small>02</small><b>W PRODUKCJI</b></div>
-                <div class="art">
-                    <div class="board"><i></i><i></i><i></i><i></i><b></b></div>
-                    <span class="pawn red"></span><span class="pawn blue"></span>
-                </div>
-                <div class="info">
-                    <label>GRA PLANSZOWA • PC • ANDROID</label>
-                    <h3>3Games Ludo</h3>
-                    <p>Klasyczna rywalizacja w nowoczesnym wydaniu. Rzuć kostką i przejmij planszę.</p>
-                    <strong>Poznaj grę <i>→</i></strong>
-                </div>
-            </a>
-        </div>
+    <section class="projects section" id="projekty">
+      <div class="section-heading reveal"><div><p class="kicker">NASZE ŚWIATY</p><h2>Dwa projekty.<br>Dwie różne przygody.</h2></div><p>Każdy projekt ma własny charakter,<br>ale wszystkie łączy jakość PlayFlower.</p></div>
+      <div class="project-list">
+        <a class="project-card minecraft reveal" href="https://bit.ly/PlayFlowerWeb" target="_blank" rel="noopener">
+          <div class="project-number">01</div><div class="project-preview"><div class="preview-grid"></div><div class="project-logo"><img src="logo-playflower.png" alt="PlayFlower Minecraft"></div><span class="live"><i></i> PROJEKT ONLINE</span></div>
+          <div class="project-content"><div><p>MINECRAFT NETWORK</p><h3>PlayFlower</h3><span>Twój świat. Twoja przygoda.</span></div><p>Rozwijany serwer Minecraft pełen własnych trybów, wydarzeń i systemów, które budują prawdziwą społeczność.</p><div class="tags"><span>Survival</span><span>OneBlock</span><span>Minigry</span></div><strong>Wejdź na stronę projektu <i>↗</i></strong></div>
+        </a>
+        <a class="project-card ludo reveal" href="https://domkor2012-sys.github.io/3Games-Ludo/">
+          <div class="project-number">02</div><div class="project-preview"><div class="board"><i></i><i></i><i></i><i></i><b></b></div><span class="pawn pawn-red"></span><span class="pawn pawn-blue"></span><span class="dice">⚄</span><span class="live soon">W PRODUKCJI</span></div>
+          <div class="project-content"><div><p>GRA PLANSZOWA</p><h3>3Games Ludo</h3><span>Jedna plansza. Zero litości.</span></div><p>Klasyczna rywalizacja w nowoczesnym wydaniu na Windows i Androida, a później również w przeglądarce.</p><div class="tags"><span>Windows</span><span>Android</span><span>Web później</span></div><strong>Poznaj 3Games Ludo <i>→</i></strong></div>
+        </a>
+      </div>
     </section>
 
-    <section class="manifest" id="studio">
-        <span>PLAYFLOWER STUDIO</span>
-        <div><small>POLSKA • 2026</small><i></i><small>TWORZYMY NIEZALEŻNIE</small></div>
-    </section>
-</main>
+    <section class="about" id="studio"><div class="about-inner">
+      <div class="about-copy reveal"><p class="kicker">PLAYFLOWER STUDIO</p><h2>Małe studio.<br><em>Wielkie ambicje.</em></h2><p>Nie kopiujemy gotowych schematów. Szukamy własnego stylu, budujemy od podstaw i rozwijamy projekty razem z ich społecznością.</p><a href="#kontakt">Porozmawiajmy <span>→</span></a></div>
+      <div class="values"><article class="reveal"><span>01</span><div><h3>Pomysł ponad szablon</h3><p>Każdy świat potrzebuje własnej osobowości.</p></div></article><article class="reveal"><span>02</span><div><h3>Społeczność w centrum</h3><p>Tworzymy dla ludzi, nie tylko dla statystyk.</p></div></article><article class="reveal"><span>03</span><div><h3>Rozwój bez końca</h3><p>Każda premiera to początek kolejnego etapu.</p></div></article></div>
+    </div></section>
 
-<footer>
-    <a class="brand" href="#top"><span class="mark">✦</span><span><b>PlayFlower</b><small>STUDIO</small></span></a>
-    <small>© 2026 PlayFlower Studio</small>
-    <a href="#top">Na górę ↑</a>
-</footer>
+    <section class="contact section reveal" id="kontakt"><div><p class="kicker">MASZ POMYSŁ?</p><h2>Zbudujmy coś,<br>co zostanie na dłużej.</h2></div><a class="primary" href="mailto:playflowersupport@gmail.com">Napisz do nas <span>↗</span></a><span class="mail">playflowersupport@gmail.com</span></section>
+  </main>
 
-<script src="script.js"></script>
+  <footer><div class="footer-top"><a class="brand" href="#start"><img src="logo-playflower.png" alt=""><span><b>PlayFlower</b><small>CREATIVE STUDIO</small></span></a><p>Gry, serwery i cyfrowe światy<br>tworzone z pasją.</p><nav><a href="#projekty">Projekty</a><a href="#studio">Studio</a><a href="#kontakt">Kontakt</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> PlayFlower Studio</span><span>MADE WITH PASSION IN POLAND</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
