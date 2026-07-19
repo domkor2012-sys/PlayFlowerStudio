@@ -12,9 +12,24 @@
 <div class="glow g1"></div>
 <div class="glow g2"></div>
 
+<!-- Particle container for interactive particles -->
+<div id="particles-container" class="particles-container"></div>
+<!-- Cursor glow for hero section -->
+<div id="cursor-glow" class="cursor-glow"></div>
+
 <header>
     <a class="brand" href="#top"><span class="mark">✦</span><span><b>PlayFlower</b><small>STUDIO</small></span></a>
     <nav><a href="#projekty">Projekty</a><a href="#studio">O studiu</a></nav>
+    <button id="hamburger-menu" class="hamburger-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="mobile-menu" class="mobile-menu">
+        <a href="#projekty">Projekty</a>
+        <a href="#studio">O studiu</a>
+        <a class="outline" href="#projekty">Odkryj projekty ↘</a>
+    </nav>
     <a class="outline" href="#projekty">Odkryj projekty ↘</a>
 </header>
 
@@ -77,5 +92,7 @@
     <small>© 2026 PlayFlower Studio</small>
     <a href="#top">Na górę ↑</a>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
